@@ -1,229 +1,591 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>newset will always be new</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollzer.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Newset</title>
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+	 <!--CSS styles-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">  
+        <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
 
-				<div class="top">
+        
+        <!--/CSS styles-->
+        <!--Javascript files-->
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+        
+        <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="https://s.gravatar.com/avatar/7c66697f8592d74f2b80358206972a6b?s=80" alt="" /></span>
-							<h1 id="title">Luo Jie</h1>
-							<p>Web Application Developer</p>
-						</div>
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-								2. Standard link (sends the user to another page/site)
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
-				</div>
-				
-				<div class="bottom">
+        <script type="text/javascript" src="js/masonry.min.js"></script>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
-							<li><a href="http://github.com/newset" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-				
-				</div>
-			
-			</div>
+        <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
 
-		<!-- Main -->
-			<div id="main">
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+        <!--/Javascript files-->
 
-							<header>
-								<h2 class="alt">Hi! I'm a web application developer in China</a>.</h2>
-								<p><a href="http://github.com/newset">@newset</a> will always be new<br />
-								Go get them.</p>
-							</header>
-							
-							<footer>
-								<a href="#portfolio" class="button scrolly">See More</a>
-							</footer>
 
-						</div>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
-							fusce hendrerit lacus ridiculus.</p>
-						
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+        <!--Custom Styles for demo only-->
+        <link rel="stylesheet" href="custom-style.css">
+        <script type="text/javascript" src="custom-style.js"></script>
+        <!--/Custom Styles-->
 
-						</div>
-					</section>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- start of #sider -->
+		<div id="sider">
+			<div id="main-nav" class="ps-container">
+                    <div id="nav-container">
+                        <div id="profile" class="clearfix">
+                            <div class="portrate hidden-xs"></div>
+                            <div class="title">
+                                <h2>Luo Jie</h2>
+                                <h3>Web & Mobile Hacker</h3>
+                            </div>
+                            
+                        </div>
+                        <ul id="navigation">
+                            <li class="currentmenu">
+                              <a href="#biography">
+                                <div class="icon icon-user"></div>
+                                <div class="text">About Me</div>
+                              </a>
+                            </li>  
+                            
+                            <li class="">
+                              <a href="#Career">
+                                <div class="icon icon-book"></div>
+                                <div class="text">Career</div>
+                              </a>
+                            </li> 
+                            
+                            <li class="">
+                              <a href="#teaching">
+                                <div class="icon icon-time"></div>
+                                <div class="text">Teaching</div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#contact">
+                                  <div class="icon icon-calendar"></div>
+                                  <div class="text">Contact &amp; Meet Me</div>
+                              </a>
+                            </li>
+                        </ul>
+                    </div>        
+                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 250px;">
+                	<div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 695px;">
+                	<div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div>
+                </div>
+            </div>
+		</div>
+		<!-- end of #sider -->
+		
+		<!-- start of #main -->
+		<div id="main">
+			<!-- start bio -->
+			<div id="biography" class="page home" data-pos="home">
+                <div class="pageheader">
+                    <div class="headercontent">
+                        <div class="section-container">
+                            
+                            <div class="row">
+                                <div class="col-sm-2 visible-sm"></div>
+                                <div class="col-sm-8 col-md-5">
+                                    <div class="biothumb">
+                                        <img alt="image" src="img/personal/06.jpg" class="img-responsive">
+                                        <div class="overlay">
+                                            
+                                            <h1 class="">Jennifer Doe</h1>
+                                            <ul class="list-unstyled">
+                                                <li>Graduate School of Business</li>
+                                                <li>Knight Management Center</li>
+                                                <li>Stanford University</li>
+                                            </ul>
+                                        </div> 
+                                        
+                                           
+                                    </div>
+                                    
+                                </div>
+                                <div class="clearfix visible-sm visible-xs"></div>
+                                <div class="col-sm-12 col-md-7">
+                                    <h3 class="title">Bio</h3>
+                                    <p>A social psychologist and marketer, Jennifer Doe is the General Atlantic Professor of Marketing and Ormond Family Faculty at Stanford University’s Graduate School of Business. Her research spans time, money and happiness. She focuses on questions such as: What actually makes people happy, as opposed to what they think makes them happy? </p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor.sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                </div>  
+                                
+                            </div>
+                        </div>        
+                    </div>
+                </div>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+                <div class="pagecontents">
+                    <div class="section color-1">
+                        <div class="section-container">
+                            <div class="row">
+                                <div class="col-md-5 col-md-offset-1">
+                                    <div class="title text-center">
+                                        <h3>Academic Positions</h3>
+                                    </div>
+                                    <ul class="ul-dates">
+                                        <li>
+                                            <div class="dates">
+                                                <span>Present</span>
+                                                <span>2005</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>General Atlantic Professor</h4>
+                                                <p><em>Stanford University</em>, Graduate School of Business</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>2005</span>
+                                                <span>2004</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>Full Professor</h4>
+                                                <p><em>Stanford University</em>, Graduate School of Business</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>2004</span>
+                                                <span>2001</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>Assistant Professor</h4>
+                                                <p><em>UCLA</em>, Anderson Graduate School of Management</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dates">
+                                                <span>2001</span>
+                                                <span>1999</span>
+                                            </div>
+                                            <div class="content">
+                                                <h4>Visiting Assistant Professor</h4>
+                                                <p><em>Columbia University</em>, Graduate School of Business</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="title text-center">
+                                        <h3>Education &amp; Training</h3>
+                                    </div>
+                                    <ul class="ul-card">
+                                        <li>
+                                            <div class="dy">
+                                                <span class="degree">Ph.D.</span>
+                                                <span class="year">1995</span>
+                                            </div>
+                                            <div class="description">
+                                                <p class="waht">Ph.D. in Marketing</p>
+                                                <p class="where">Stanford University Graduate School of Business</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dy">
+                                                <span class="degree">M.B.A.</span><span class="year">1993</span>
+                                            </div>
+                                            <div class="description">
+                                                <p class="waht">Master of Business Administration</p>
+                                                <p class="where">Boston University</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dy">
+                                                <span class="degree">B.A.</span><span class="year">1989</span>
+                                            </div>
+                                            <div class="description">
+                                                <p class="waht">Bachelor of Arts in Psychology</p>
+                                                <p class="where">University of California, Berkeley</p>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+                                </div>    
+                            </div>    
+                        </div>
+                            
+                    </div>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-							
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
-							ornare iaculis.</p>
+                    <div class="section color-2">
+                        <div class="section-container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="title text-center">
+                                        <h3>Honors, Awards and Grants</h3>
+                                    </div>
+                                    <ul class="timeline">
+                                                
+                                        <li class="open">
+                                            <div class="date">SCP 2014</div>
+                                            <div class="circle"></div>
+                                            <div class="data">
+                                                <div class="subject">Distinguished Scientific Achievement Award</div>
+                                                <div class="text row open" style="display: block;">
+                                                    <div class="col-md-2">
+                                                        <img alt="image" class="thumbnail img-responsive" src="img/Nobel_Prize.png">
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="date">2012-2013</div>
+                                            <div class="circle"></div>
+                                            <div class="data">
+                                                <div class="subject">Ormond Family Faculty Fellow</div>
+                                                <div class="text row">
+                                                    <div class="col-md-2">
+                                                        <img alt="image" class="thumbnail img-responsive" src="img/Nobel_Prize.png">
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="date">June 2011</div>
+                                            <div class="circle"></div>
+                                            <div class="data">
+                                                <div class="subject">Nautilus Silver Award for Dragonfly Effect</div>
+                                                <div class="text row">
+                                                    <div class="col-md-2">
+                                                        <img alt="image" class="thumbnail img-responsive" src="img/Nobel_Prize.png">
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="date">2000 - 2003</div>
+                                            <div class="circle"></div>
+                                            <div class="data">
+                                                <div class="subject">Hong Kong Science International Research Grant</div>
+                                                <div class="text row">
+                                                    <div class="col-md-2">
+                                                        <img alt="image" class="thumbnail img-responsive" src="img/Nobel_Prize.png">
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="date">1999</div>
+                                            <div class="circle"></div>
+                                            <div class="data">
+                                                <div class="subject">Citibank Best Teacher Award (school-wide award, UCLA)</div>
+                                                <div class="text row">
+                                                    <div class="col-md-2">
+                                                        <img alt="image" class="thumbnail img-responsive" src="img/Nobel_Prize.png">
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dapibus lectus non dignissim. Pellentesque auctor ornare urna, volutpat condimentum quam porttitor at. Vestibulum tincidunt diam in eros aliquam luctus. Donec sagittis a purus a porttitor. Sed non feugiat enim. Donec eget metus erat. Vivamus sed consequat orci. Aenean commodo lectus sed purus auctor ullamcorper.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
 
-						</div>
-					</section>
-			
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                            
+                </div>
+            </div>
+            <!-- end of #bio -->
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+            <!-- start of #career -->
+			<div id="research" class="page" data-pos="p1" style="z-index: 0; left: 100%;">
+                <div class="pageheader">
 
-							<p>Elementum sem parturient nulla quam placerat viverra 
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia 
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc 
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-							
-							<form method="post" action="#">
-								<div class="row half">
-									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+                    <div class="headercontent">
 
-						</div>
-					</section>
-			
-			</div>
+                        <div class="section-container">
+                            <h2 class="title">Research Summary</h2>
+                        
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Recent trends in deep-submicron very large-scale integration (VLSI) circuit technology have resulted in new requirements for algorithms in integrated circuit layout. Much of my work centers on new formulations that capture performance and density criteria in the physical layout phases of computer-aided design (CAD). Our results include near-optimal approximation algorithms for such computationally difficult problems as minimum-cost Steiner tree routing, low-skew clock networks, cost-radius tradeoffs, bounded-density trees, circuit probe testing, high-performing Elmore-based constructions, layout density control, and improved manufacturability. </p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="subtitle text-center">
+                                        <h3>Interests</h3>
+                                    </div>
+                                    <ul class="ul-boxed list-unstyled">
+                                        <li>Time, Money and Happiness</li>
+                                        <li>The Power of Story</li>
+                                        <li>Building Innovative Brands</li>
+                                        <li>Cultural Psychology</li>
+                                        <li>Emotions, Goals, and Health</li>
+                                        <li>computer-aided design</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				
-			</div>
+                <div class="pagecontents">
+                    <div class="section color-1">
+                        <div class="section-container">
+                            <div class="title text-center">
+                                <h3>Laboratory Personel</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    
+                                    <div id="labp-heads-wrap">
+                                        
+                                        <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; z-index: auto; width: 588px; height: 250px; margin: 0px; overflow: hidden; cursor: move;"><div id="lab-carousel" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 144px; margin: 0px; z-index: auto; width: 1788px; height: 100px;">
+                                            
+                                            <div style="margin-right: 0px;"><img alt="image" src="img/lab/lab2.jpg" width="120" height="120" class="img-circle lab-img" style="z-index: 1; width: 100px; height: 100px; margin-top: 50px; margin-right: 0px; margin-left: 0px; opacity: 0.2; display: inline-block;"></div>
+                                            <div style="margin-right: 0px;"><img alt="image" src="img/lab/lab1.jpg" width="120" height="120" class="img-circle lab-img" style="z-index: 2; width: 150px; height: 150px; margin-top: 30px; margin-right: -25px; margin-left: -25px; opacity: 1; display: inline-block;"></div>
+                                            <div style="margin-right: 144px;"><img alt="image" src="img/lab/lab4.jpg" width="120" height="120" class="img-circle lab-img" style="z-index: 1; width: 100px; height: 100px; margin-top: 50px; margin-right: 0px; margin-left: 0px; opacity: 0.2;"></div>
+                                            <div style="margin-right: 0px;"><img alt="image" src="img/lab/lab3.jpg" width="120" height="120" class="img-circle lab-img" style="z-index: 1; width: 100px; height: 100px; margin-top: 50px; margin-right: 0px; margin-left: 0px; opacity: 0.2;"></div>
+                                            <div style="margin-right: 0px;"><img alt="image" src="img/lab/lab6.jpg" width="120" height="120" class="img-circle lab-img" style="z-index: 1; width: 100px; height: 100px; margin-top: 50px; margin-right: 0px; margin-left: 0px; opacity: 0.2;"></div>
+                                        <div style="margin-right: 0px;"><img alt="image" src="img/lab/lab5.jpg" width="120" height="120" class="img-circle lab-img" style="z-index: 1; width: 100px; height: 100px; margin-top: 50px; margin-right: 0px; margin-left: 0px; opacity: 0.2;"></div></div></div>
+                                        <div>
+                                            <a href="#" id="prev" class="" style="display: block;"><i class="icon-chevron-sign-left"></i></a>
+                                            <a href="#" id="next" class="" style="display: block;"><i class="icon-chevron-sign-right"></i></a>
+                                        </div>
+                                    </div>
 
-	</body>
+                                    <div id="lab-details">
+                                        <div style="display: none;">
+                                            <h3>David A. Doe</h3>
+                                            <h4>Postdoctoral fellow</h4>
+                                            <a href="#" class="btn btn-info">+ Follow</a>
+                                        </div>
+                                        <div>
+                                            <h3>James Doe</h3>
+                                            <h4>Postdoctoral fellow</h4>
+                                            <a href="#" class="btn btn-info">+ Follow</a>
+                                        </div>
+                                        <div style="display: block;">
+                                            <h3>Nadja Sriram</h3>
+                                            <h4>Postdoctoral fellow</h4>
+                                            <a href="#" class="btn btn-info">+ Follow</a>
+                                        </div>
+                                        <div style="display: none;">
+                                            <h3>Davide Doe</h3>
+                                            <h4>Research Assistant</h4>
+                                            <a href="#" class="btn btn-info">+ Follow</a>
+                                        </div>
+                                        <div style="display: none;">
+                                            <h3>Pauline Doe</h3>
+                                            <h4>Summer Intern</h4>
+                                            <a href="#" class="btn btn-info">+ Follow</a>
+                                        </div>
+                                        <div style="display: none;">
+                                            <h3>James Doe</h3>
+                                            <h4>Postdoctoral fellow</h4>
+                                            <a href="#" class="btn btn-info">+ Follow</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>Great lab Personel!</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section color-2">
+                        <div class="section-container">
+                            <div class="title text-center">
+                                <h3>Research Projects</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="ul-withdetails">
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="image">
+                                                        <img alt="image" src="img/projects/p3.jpg" class="img-responsive">
+                                                        <div class="imageoverlay">
+                                                            <i class="icon icon-search"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-9">
+                                                    <div class="meta">
+                                                        <h3>Title of Preject</h3>
+                                                        <p>Very short description of the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="image">
+                                                        <img alt="image" src="img/projects/p2.jpg" class="img-responsive">
+                                                        <div class="imageoverlay">
+                                                            <i class="icon icon-search"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-9">
+                                                    <div class="meta">
+                                                        <h3>Title of Preject</h3>
+                                                        <p>Very short description of the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="image">
+                                                        <img alt="image" src="img/projects/p4.jpg" class="img-responsive">
+                                                        <div class="imageoverlay">
+                                                            <i class="icon icon-search"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-9">
+                                                    <div class="meta">
+                                                        <h3>Title of Preject</h3>
+                                                        <p>Very short description of the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="image">
+                                                        <img alt="image" src="img/projects/p5.jpg" class="img-responsive">
+                                                        <div class="imageoverlay">
+                                                            <i class="icon icon-search"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-9">
+                                                    <div class="meta">
+                                                        <h3>Title of Preject</h3>
+                                                        <p>Very short description of the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="image">
+                                                        <img alt="image" src="img/projects/p3.jpg" class="img-responsive">
+                                                        <div class="imageoverlay">
+                                                            <i class="icon icon-search"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-9">
+                                                    <div class="meta">
+                                                        <h3>Title of Preject</h3>
+                                                        <p>Very short description of the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="image">
+                                                        <img alt="image" src="img/projects/p2.jpg" class="img-responsive">
+                                                        <div class="imageoverlay">
+                                                            <i class="icon icon-search"></i>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-9">
+                                                    <div class="meta">
+                                                        <h3>Title of Preject</h3>
+                                                        <p>Very short description of the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="details">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <!-- end of #career -->
+
+		</div>
+		<!-- end of #main -->
+	</div>
+</body>
 </html>
