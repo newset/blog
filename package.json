@@ -1,0 +1,36 @@
+{
+  "name": "uchuxi",
+  "version": "1.0.0",
+  "description": "newset.github.io ================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bisheng start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newset/newset.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newset/newset.github.io/issues"
+  },
+  "homepage": "https://github.com/newset/newset.github.io#readme",
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^8.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-react": "^5.0.1"
+  },
+  "dependencies": {
+    "antd": "^1.6.5",
+    "bisheng": "^0.7.0",
+    "bisheng-plugin-description": "^0.1.0",
+    "bluebird": "^3.4.1",
+    "react": "^15.0.2",
+    "react-document-title": "^2.0.1",
+    "react-router": "^2.4.0"
+  }
+}
